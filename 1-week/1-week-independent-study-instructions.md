@@ -4,41 +4,33 @@
 
 Expected independent study time: **approximately 28 hours**
 
-The suggested schedule is about **7 hours per day from Tuesday to Friday**. You may arrange the hours differently, but complete the required work before Monday.
+The suggested schedule is approximately **7 hours per day from Tuesday to Friday**.
 
-## Learning goals
+The main idea of the week is:
 
-Before Monday, you should be able to:
+**find data → understand its structure and meaning → retrieve it → combine it → inspect quality → prepare it for analysis**
 
-* explain why understanding data comes before modelling;
-* recognize important data types and explain what they mean;
-* identify operations that are meaningful for different types of data;
-* inspect a dataset using Python and pandas;
-* identify common data-quality problems;
-* perform basic data cleaning and transformation;
-* explain basic alternatives for storing and retrieving data;
-* justify important preprocessing choices.
+You will work with both tabular data and project-style JSON data.
 
 ---
 
-# Tuesday – Understand the data and learn the basic tools
+# Tuesday – Understand Data and Data Storage
 
 **Suggested time: ~7 h**
 
-## 1. Course material: Understanding Data
+## 1. Understanding Data
 
-Study:
+Study the course material:
 
 **Understanding Data: Types, Meaning and Valid Operations**
 
-Main topics:
+Focus on:
 
 * technical vs semantic data types;
-* nominal, ordinal, interval and ratio scales;
+* nominal, ordinal, interval and ratio data;
 * discrete and continuous variables;
 * identifiers;
-* dates and time;
-* text;
+* datetime and text;
 * missing values;
 * valid and invalid operations;
 * implications for preprocessing and machine learning.
@@ -47,141 +39,208 @@ Complete the short exercises included in the material.
 
 **Suggested time: ~2 h**
 
-## 2. Pandas fundamentals
+## 2. Pandas Fundamentals
 
-Study and run examples from Jake VanderPlas, *Python Data Science Handbook*:
+Study and run selected examples from Jake VanderPlas, *Python Data Science Handbook*:
 
-1. [Introducing Pandas Objects](https://jakevdp.github.io/PythonDataScienceHandbook/03.01-introducing-pandas-objects.html)
-2. [Data Indexing and Selection](https://jakevdp.github.io/PythonDataScienceHandbook/03.02-data-indexing-and-selection.html)
-3. [Operating on Data in Pandas](https://jakevdp.github.io/PythonDataScienceHandbook/03.03-operations-in-pandas.html)
-4. [Handling Missing Data](https://jakevdp.github.io/PythonDataScienceHandbook/03.04-missing-values.html)
+* [Introducing Pandas Objects](https://jakevdp.github.io/PythonDataScienceHandbook/03.01-introducing-pandas-objects.html)
+* [Data Indexing and Selection](https://jakevdp.github.io/PythonDataScienceHandbook/03.02-data-indexing-and-selection.html)
+* [Operating on Data in Pandas](https://jakevdp.github.io/PythonDataScienceHandbook/03.03-operations-in-pandas.html)
+* [Handling Missing Data](https://jakevdp.github.io/PythonDataScienceHandbook/03.04-missing-values.html)
 
-Do not only read the examples. Run selected examples yourself in Jupyter.
+Run examples yourself in Jupyter. Do not only read them.
 
-**Suggested time: ~3 h**
+**Suggested time: ~2.5 h**
 
-## 3. Course material: Getting, Storing and Retrieving Data
+## 3. Getting, Storing and Retrieving Data
 
-Study the provided course material:
+Study the course material:
 
-**Getting, Storing and Retrieving Data**
+**Getting, Storing and Retrieving Data: Files, JSON and Databases**
 
-Main topics:
+Focus on:
 
 * where data comes from;
-* files, APIs and databases;
+* structured, semi-structured and unstructured data;
 * CSV and JSON;
-* tables, rows, columns and keys;
-* storing and retrieving data;
-* combining data sources;
-* when files are sufficient;
-* when a database or another data-management solution is useful;
-* data provenance and basic privacy considerations.
+* files and directory structures;
+* schemas and data dictionaries;
+* raw vs prepared data;
+* retrieving and combining records;
+* basic relational databases;
+* why different data-management solutions are needed;
+* volume, velocity and variety.
 
-**Suggested time: ~1.5 h**
+**Suggested time: ~2 h**
 
-## 4. Additional perspective
+## 4. Short additional reading
 
-Read briefly:
+Browse the introductory sections of:
 
-* [Zaki & Meira: Chapter 1 – Data Mining and Analysis](https://dataminingbook.info/book_html/chap1/book.html)
-* [Zaki & Meira: Chapter 2 – Numeric Attributes](https://dataminingbook.info/book_html/chap2/book.html)
-* [Zaki & Meira: Chapter 3 – Categorical Attributes](https://dataminingbook.info/book_html/chap3/book.html)
+* [Zaki & Meira – Chapter 1: Data Mining and Analysis](https://dataminingbook.info/book_html/chap1/book.html)
+* [Chapter 2: Numeric Attributes](https://dataminingbook.info/book_html/chap2/book.html)
+* [Chapter 3: Categorical Attributes](https://dataminingbook.info/book_html/chap3/book.html)
 
-Do **not** study the mathematical details. Browse these chapters to reinforce the distinction between different forms of data.
+Concentrate on the concepts. Mathematical details are not required yet.
 
 **Suggested time: ~0.5 h**
 
 ---
 
-# Wednesday – Understand a real dataset
+# Wednesday – Explore Project-Style Data
 
 **Suggested time: ~7 h**
 
-## Exercise: Understand the Dataset
+## Exercise: From Files to Data
 
-Use the dataset provided for the course.
+You will receive a directory containing several artificial JSON files representing records from an information system.
 
-Create a Jupyter notebook and investigate the data.
+A simplified structure may look like:
 
-### Tasks
+```text
+raw/
+├── students/
+│   ├── SYN001.json
+│   ├── SYN002.json
+│   └── ...
+├── activity/
+├── quiz_attempts/
+└── task_submissions/
+```
 
-1. Load the dataset.
-2. Determine its number of rows and columns.
-3. Inspect its technical data types.
-4. Explain what the important variables actually represent.
-5. Classify variables according to their meaning.
-6. Identify identifiers and variables that only appear numerical.
-7. Find missing values.
-8. Find suspicious or impossible values.
-9. Check for duplicates.
-10. Look for inconsistent categories.
-11. Calculate useful descriptive statistics.
-12. Create a few useful visualizations.
-13. Suggest questions that could reasonably be investigated using the data.
-14. Identify information you would need before trusting the dataset.
+The final structure will follow the course dataset documentation.
 
-Your notebook should show both:
+## Part A – Understand the files
 
-**what you found → how you found it**
+Investigate:
 
-Do **not** build a machine-learning model yet.
+1. How many files are present?
+2. What does one file represent?
+3. What fields occur in each type of record?
+4. Which fields are identifiers?
+5. Which fields can connect records from different sources?
+6. Are all records structured in the same way?
+7. Are some values missing?
+8. Are there nested structures?
+9. Which fields contain numbers, categories, dates or text?
+10. What information would you need from a data dictionary before interpreting the fields?
 
-### Useful references
+## Part B – Retrieve and combine
 
-Return to these sections when needed:
+Using Python:
 
-* [Data Indexing and Selection](https://jakevdp.github.io/PythonDataScienceHandbook/03.02-data-indexing-and-selection.html)
-* [Handling Missing Data](https://jakevdp.github.io/PythonDataScienceHandbook/03.04-missing-values.html)
-* [Aggregation and Grouping](https://jakevdp.github.io/PythonDataScienceHandbook/03.08-aggregation-and-grouping.html)
+* find files programmatically;
+* load JSON records;
+* inspect nested structures;
+* combine several records;
+* create one or more pandas DataFrames;
+* retain identifiers needed to connect datasets.
 
-**Suggested time: ~7 h**
+For example:
+
+```python
+from pathlib import Path
+import json
+
+files = Path("raw/students").glob("*.json")
+```
+
+Use `pandas.json_normalize()` where nested records need to be transformed into tabular form.
+
+## Part C – Inspect the resulting data
+
+Determine:
+
+* number of observations;
+* number of variables;
+* technical data types;
+* semantic data types;
+* missing values;
+* suspicious values;
+* duplicate observations;
+* inconsistent categories.
+
+Create a few useful summaries and visualizations.
+
+**Do not build a machine-learning model yet.**
 
 ---
 
-# Thursday – Prepare the data
+# Thursday – Prepare, Store and Retrieve Data
 
 **Suggested time: ~7 h**
 
-## Exercise: Prepare the Dataset
+Continue with Wednesday's data.
 
-Continue using the same dataset.
+## 1. Prepare the Data – ~4 h
 
-Keep the original dataset unchanged and create a prepared version.
-
-### Tasks
+Create an analysis-ready version while keeping the original raw data unchanged.
 
 Practise:
 
-* selecting relevant rows and columns;
-* correcting inappropriate data types;
+* selecting useful fields;
+* correcting data types;
 * handling missing values;
-* investigating or removing duplicates;
 * correcting inconsistent categories;
-* identifying and handling invalid values;
-* creating simple derived variables;
-* grouping and summarizing data;
-* saving the prepared dataset.
+* investigating invalid values;
+* removing or resolving duplicates;
+* deriving useful variables;
+* combining information from different files;
+* grouping and summarizing observations.
 
-For important changes, briefly record:
+For important changes, record briefly:
 
 > **What did you change? Why?**
 
-There may be more than one reasonable solution.
+Save prepared results separately from the raw data.
 
-### Useful references
+For example:
 
-* [Operating on Data in Pandas](https://jakevdp.github.io/PythonDataScienceHandbook/03.03-operations-in-pandas.html)
-* [Handling Missing Data](https://jakevdp.github.io/PythonDataScienceHandbook/03.04-missing-values.html)
-* [Aggregation and Grouping](https://jakevdp.github.io/PythonDataScienceHandbook/03.08-aggregation-and-grouping.html)
+```text
+prepared/
+├── students.csv
+├── quiz_attempts.csv
+└── activity.csv
+```
 
-**Dataset preparation: ~5.5 h**
+## 2. Basic Database Exercise – ~1.5 h
 
-## Start your concept map
+Create or use a small **SQLite database** containing selected prepared data.
 
-Review the theory studied during the week and begin your simplified concept map.
+Practise at least:
 
-Choose concepts that you found:
+```sql
+SELECT *
+FROM students;
+```
+
+a filtered query:
+
+```sql
+SELECT student_id, score
+FROM quiz_attempts
+WHERE score > 0.7;
+```
+
+and an aggregation such as:
+
+```sql
+SELECT student_id, AVG(score)
+FROM quiz_attempts
+GROUP BY student_id;
+```
+
+The purpose is not to learn SQL comprehensively.
+
+The goal is to understand the difference between:
+
+**storing records → retrieving selected information → loading data for analysis**
+
+## 3. Start Your Concept Map – ~1.5 h
+
+Review the week's theory.
+
+Prepare a simplified concept map containing concepts that you found:
 
 * important;
 * interesting;
@@ -189,73 +248,68 @@ Choose concepts that you found:
 * surprising; or
 * strongly connected.
 
-Do not try to include everything.
+Possible concepts could come from areas such as:
 
-**Concept-map work: ~1.5 h**
+**Data Source – JSON – Schema – Identifier – Data Type – Data Quality – Database – Preprocessing**
+
+Do not try to include everything.
 
 ---
 
-# Friday – Complete, review and prepare for Monday
+# Friday – Consolidate and Prepare for Monday
 
 **Suggested time: ~7 h**
 
-## 1. Complete your work
+## 1. Finish Practical Work – ~3 h
 
-Finish:
+Complete your notebooks and prepared data.
 
-* data-understanding notebook;
-* data-preparation work;
-* simplified concept map.
+Check that:
 
-Check that your notebook can be run from beginning to end.
+* the notebook can run from beginning to end;
+* raw data has not been overwritten;
+* important preprocessing choices are explained;
+* relationships between datasets are understandable;
+* prepared outputs can be reproduced from the raw data.
 
-**Suggested time: ~3 h**
+## 2. Complete the Concept Map – ~1 h
 
-## 2. Preparation quiz/task
+Finalize your simplified concept map.
 
-Complete the Week 1 preparation quiz or equivalent task.
+Bring it to Monday's session.
 
-Topics include:
+## 3. Preparation Quiz / Task – ~1 h
 
-* data types and meaning;
+Complete the preparation quiz or equivalent task.
+
+Topics may include:
+
+* semantic and technical data types;
 * discrete and continuous data;
 * identifiers;
 * missing values;
+* JSON and CSV;
+* schemas and data dictionaries;
+* raw and prepared data;
 * data quality;
 * preprocessing;
-* data sources;
-* storage and retrieval;
+* databases and retrieval;
 * basic pandas operations.
 
-**Suggested time: ~1 h**
+## 4. Review and Technical Catch-up – ~2 h
 
-## 3. Review and practise
+Use the remaining time according to your needs:
 
-Use the remaining time according to your needs.
+* practise pandas;
+* practise loading JSON;
+* repeat SQL queries;
+* improve visualizations;
+* resolve Python, Jupyter or Git problems;
+* review unclear concepts.
 
-Possible activities:
-
-* repeat difficult pandas operations;
-* improve your notebook;
-* investigate the dataset further;
-* practise visualizations;
-* review unclear concepts;
-* resolve remaining Python, Jupyter or Git problems.
-
-If you need additional Python practice, use:
+If you need additional Python practice:
 
 [Introduction to Statistical Learning – Introduction to Python Lab](https://intro-stat-learning.github.io/ISLP/labs/Ch02-statlearn-lab.html)
-
-Useful parts include:
-
-* basic Python commands;
-* numerical Python;
-* indexing;
-* loading data;
-* selecting rows and columns;
-* basic graphical and numerical summaries.
-
-**Suggested time: ~3 h**
 
 ---
 
@@ -263,15 +317,18 @@ Useful parts include:
 
 Before Monday, you should have:
 
-* studied the required theory;
-* completed the data-understanding exercise;
-* completed the data-preparation exercise;
+* studied the assigned theory;
+* worked with several data files;
+* loaded and combined JSON data;
+* inspected data types and data quality;
+* prepared analysis-ready data;
+* practised basic storage and retrieval using SQLite;
 * prepared your simplified concept map;
 * completed the preparation quiz/task;
 * a functioning course environment.
 
 You do **not** need to master everything before Monday.
 
-You should arrive already familiar with the basic concepts so that Monday can be used for:
+Monday will be used for:
 
-**clarification → deeper exercises → problem solving → discussion → guided practical work**
+**clarification → deeper data-quality and preprocessing problems → discussion → guided practical work → project preparation**
