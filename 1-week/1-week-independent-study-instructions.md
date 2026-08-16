@@ -4,13 +4,13 @@
 
 Expected independent study time: **approximately 28 hours**
 
-The suggested schedule is approximately **7 hours per day from Tuesday to Friday**.
+Suggested schedule: approximately **7 hours per day from Tuesday to Friday**.
 
-The main idea of the week is:
+This week follows the data workflow:
 
-**find data → understand its structure and meaning → retrieve it → combine it → inspect quality → prepare it for analysis**
+**source data → understand → retrieve → combine → validate → prepare → store → query**
 
-You will work with both tabular data and project-style JSON data.
+You will work with **fully synthetic data** based on realistic Edge-LMS data structures. Synthetic data is used by default to avoid exposing real student records or unnecessary personal information.
 
 ---
 
@@ -18,7 +18,7 @@ You will work with both tabular data and project-style JSON data.
 
 **Suggested time: ~7 h**
 
-## 1. Understanding Data
+## 1. Understanding Data – ~2 h
 
 Study the course material:
 
@@ -37,9 +37,7 @@ Focus on:
 
 Complete the short exercises included in the material.
 
-**Suggested time: ~2 h**
-
-## 2. Pandas Fundamentals
+## 2. Pandas Fundamentals – ~2.5 h
 
 Study and run selected examples from Jake VanderPlas, *Python Data Science Handbook*:
 
@@ -48,11 +46,9 @@ Study and run selected examples from Jake VanderPlas, *Python Data Science Handb
 * [Operating on Data in Pandas](https://jakevdp.github.io/PythonDataScienceHandbook/03.03-operations-in-pandas.html)
 * [Handling Missing Data](https://jakevdp.github.io/PythonDataScienceHandbook/03.04-missing-values.html)
 
-Run examples yourself in Jupyter. Do not only read them.
+Run selected examples yourself in Jupyter.
 
-**Suggested time: ~2.5 h**
-
-## 3. Getting, Storing and Retrieving Data
+## 3. Getting, Storing and Retrieving Data – ~2 h
 
 Study the course material:
 
@@ -60,199 +56,209 @@ Study the course material:
 
 Focus on:
 
-* where data comes from;
+* data sources;
 * structured, semi-structured and unstructured data;
-* CSV and JSON;
+* JSON, JSONL and CSV;
 * files and directory structures;
 * schemas and data dictionaries;
-* raw vs prepared data;
-* retrieving and combining records;
-* basic relational databases;
-* why different data-management solutions are needed;
+* identifiers and relationships;
+* raw, derived and prepared data;
+* databases and SQL;
+* why different data-management solutions exist;
 * volume, velocity and variety.
 
-**Suggested time: ~2 h**
+## 4. Additional reading – ~0.5 h
 
-## 4. Short additional reading
-
-Browse the introductory sections of:
+Browse:
 
 * [Zaki & Meira – Chapter 1: Data Mining and Analysis](https://dataminingbook.info/book_html/chap1/book.html)
 * [Chapter 2: Numeric Attributes](https://dataminingbook.info/book_html/chap2/book.html)
 * [Chapter 3: Categorical Attributes](https://dataminingbook.info/book_html/chap3/book.html)
 
-Concentrate on the concepts. Mathematical details are not required yet.
-
-**Suggested time: ~0.5 h**
+Concentrate on concepts rather than mathematical details.
 
 ---
 
-# Wednesday – Explore Project-Style Data
+# Wednesday – From Source Records to Usable Data
 
 **Suggested time: ~7 h**
 
-## Exercise: From Files to Data
+Edge-LMS does not originally store everything in one clean table. Its data can occur in JSON, JSONL, task files, logs and different directory structures. Different subsystems also use different identifiers and record structures.
 
-You will receive a directory containing several artificial JSON files representing records from an information system.
+## Exercise 1: Inspect Source-Like Data
 
-A simplified structure may look like:
-
-```text
-raw/
-├── students/
-│   ├── SYN001.json
-│   ├── SYN002.json
-│   └── ...
-├── activity/
-├── quiz_attempts/
-└── task_submissions/
-```
-
-The final structure will follow the course dataset documentation.
-
-## Part A – Understand the files
+You will receive a small collection of **synthetic source-like examples**.
 
 Investigate:
 
-1. How many files are present?
-2. What does one file represent?
-3. What fields occur in each type of record?
-4. Which fields are identifiers?
-5. Which fields can connect records from different sources?
-6. Are all records structured in the same way?
-7. Are some values missing?
-8. Are there nested structures?
-9. Which fields contain numbers, categories, dates or text?
-10. What information would you need from a data dictionary before interpreting the fields?
+1. What does one record represent?
+2. Is the record JSON, JSONL or another form?
+3. Which fields are identifiers?
+4. Which fields contain categories, numbers, dates or text?
+5. Are some fields nested?
+6. Are all records structured identically?
+7. Which values are raw observations?
+8. Which values are calculated or inferred?
+9. Which fields could connect this record with another dataset?
+10. Which fields should not normally be included in a student analysis dataset?
 
-## Part B – Retrieve and combine
+Do not assume that a field is safe or useful simply because it exists in the source system.
+
+## Exercise 2: Inspect the Teaching Export
+
+The main course dataset follows a normalized structure similar to:
+
+```text
+course-data/
+├── manifest.json
+├── students.jsonl
+├── groups.jsonl
+├── attendance_sessions.jsonl
+├── activity_daily.jsonl
+├── task_attempts.jsonl
+├── quiz_attempts.jsonl
+├── exam_attempts.jsonl
+├── grades.jsonl
+├── concept_measures.jsonl
+└── data_dictionary.md
+```
+
+The exact package used in the course may contain only the files needed for the exercise.
 
 Using Python:
 
-* find files programmatically;
-* load JSON records;
-* inspect nested structures;
-* combine several records;
-* create one or more pandas DataFrames;
-* retain identifiers needed to connect datasets.
+* find the available files;
+* read JSONL records;
+* load selected records into pandas DataFrames;
+* inspect columns and values;
+* compare the records with the data dictionary.
 
-For example:
+For each important variable, determine:
 
-```python
-from pathlib import Path
-import json
+* technical representation;
+* semantic meaning;
+* missingness;
+* whether it is stored, derived or inferred;
+* what identifier connects it to other datasets.
 
-files = Path("raw/students").glob("*.json")
-```
-
-Use `pandas.json_normalize()` where nested records need to be transformed into tabular form.
-
-## Part C – Inspect the resulting data
-
-Determine:
-
-* number of observations;
-* number of variables;
-* technical data types;
-* semantic data types;
-* missing values;
-* suspicious values;
-* duplicate observations;
-* inconsistent categories.
-
-Create a few useful summaries and visualizations.
-
-**Do not build a machine-learning model yet.**
+The Edge-LMS data dictionary explicitly distinguishes these properties.
 
 ---
 
-# Thursday – Prepare, Store and Retrieve Data
+# Thursday – Combine, Prepare, Store and Query
 
 **Suggested time: ~7 h**
 
-Continue with Wednesday's data.
+## 1. Combine Related Data – ~2 h
 
-## 1. Prepare the Data – ~4 h
+Use selected JSONL files such as:
 
-Create an analysis-ready version while keeping the original raw data unchanged.
+```text
+students.jsonl
+task_attempts.jsonl
+quiz_attempts.jsonl
+activity_daily.jsonl
+```
 
-Practise:
+Identify the appropriate keys and combine information where meaningful.
 
-* selecting useful fields;
-* correcting data types;
-* handling missing values;
-* correcting inconsistent categories;
-* investigating invalid values;
-* removing or resolving duplicates;
-* deriving useful variables;
-* combining information from different files;
-* grouping and summarizing observations.
+The teaching export uses normalized pseudonymous keys such as:
 
-For important changes, record briefly:
+```text
+student_key
+course_key
+task_key
+attempt_key
+group_key
+```
+
+Do not attempt to reconstruct original student identities.
+
+Consider:
+
+* What does one row represent?
+* Is the relationship one-to-one or one-to-many?
+* Could joining create duplicate rows?
+* Is the key valid in both datasets?
+
+The real source system contains several identifier conventions, which is one reason normalization is needed before analysis.
+
+## 2. Inspect and Prepare the Data – ~2.5 h
+
+Check:
+
+* missing values;
+* invalid values;
+* unexpected categories;
+* duplicates;
+* data types;
+* ranges;
+* timestamps;
+* unresolved relationships.
+
+Do not automatically replace every missing value.
+
+Missingness can have different meanings, for example:
+
+* feature not enabled;
+* no student action;
+* source record missing;
+* parser failure;
+* field not applicable;
+* join unresolved.
+
+These should not automatically be treated as the same kind of missing value.
+
+Create an analysis-ready DataFrame and document important changes:
 
 > **What did you change? Why?**
 
-Save prepared results separately from the raw data.
+Keep the original data unchanged.
 
-For example:
+## 3. Store and Retrieve with SQLite – ~1.5 h
 
-```text
-prepared/
-├── students.csv
-├── quiz_attempts.csv
-└── activity.csv
-```
+Load selected prepared tables into SQLite.
 
-## 2. Basic Database Exercise – ~1.5 h
-
-Create or use a small **SQLite database** containing selected prepared data.
-
-Practise at least:
+Practise:
 
 ```sql
 SELECT *
 FROM students;
 ```
 
-a filtered query:
+Filtering:
 
 ```sql
-SELECT student_id, score
+SELECT student_key, score
 FROM quiz_attempts
 WHERE score > 0.7;
 ```
 
-and an aggregation such as:
+Aggregation:
 
 ```sql
-SELECT student_id, AVG(score)
+SELECT student_key, AVG(score)
 FROM quiz_attempts
-GROUP BY student_id;
+GROUP BY student_key;
 ```
+
+and one simple join between related tables.
 
 The purpose is not to learn SQL comprehensively.
 
-The goal is to understand the difference between:
+The goal is to understand:
 
-**storing records → retrieving selected information → loading data for analysis**
+**data storage → relationships → retrieval → analysis**
 
-## 3. Start Your Concept Map – ~1.5 h
+## 4. Start Your Concept Map – ~1 h
 
-Review the week's theory.
+Start your simplified concept map based on this week's theory.
 
-Prepare a simplified concept map containing concepts that you found:
+Possible concepts include:
 
-* important;
-* interesting;
-* difficult;
-* surprising; or
-* strongly connected.
+**Data Source – JSONL – Schema – Identifier – Relationship – Missing Data – Data Quality – Preprocessing – Database**
 
-Possible concepts could come from areas such as:
-
-**Data Source – JSON – Schema – Identifier – Data Type – Data Quality – Database – Preprocessing**
-
-Do not try to include everything.
+Select only the concepts that you consider important, difficult, interesting or strongly connected.
 
 ---
 
@@ -260,17 +266,18 @@ Do not try to include everything.
 
 **Suggested time: ~7 h**
 
-## 1. Finish Practical Work – ~3 h
+## 1. Complete Practical Work – ~3 h
 
-Complete your notebooks and prepared data.
+Finish your notebook and prepared data.
 
 Check that:
 
-* the notebook can run from beginning to end;
-* raw data has not been overwritten;
-* important preprocessing choices are explained;
-* relationships between datasets are understandable;
-* prepared outputs can be reproduced from the raw data.
+* your notebook runs from beginning to end;
+* the original data remains unchanged;
+* your transformations are reproducible;
+* important preprocessing decisions are explained;
+* joins use meaningful keys;
+* prepared outputs can be recreated from the source data.
 
 ## 2. Complete the Concept Map – ~1 h
 
@@ -280,20 +287,21 @@ Bring it to Monday's session.
 
 ## 3. Preparation Quiz / Task – ~1 h
 
-Complete the preparation quiz or equivalent task.
+Complete the Week 1 preparation quiz or equivalent task.
 
 Topics may include:
 
 * semantic and technical data types;
 * discrete and continuous data;
 * identifiers;
-* missing values;
-* JSON and CSV;
+* JSON and JSONL;
 * schemas and data dictionaries;
-* raw and prepared data;
+* raw, derived and prepared data;
+* missingness;
 * data quality;
 * preprocessing;
-* databases and retrieval;
+* relationships and joins;
+* databases and SQL;
 * basic pandas operations.
 
 ## 4. Review and Technical Catch-up – ~2 h
@@ -301,15 +309,25 @@ Topics may include:
 Use the remaining time according to your needs:
 
 * practise pandas;
-* practise loading JSON;
+* practise reading JSON/JSONL;
 * repeat SQL queries;
-* improve visualizations;
-* resolve Python, Jupyter or Git problems;
-* review unclear concepts.
+* investigate data relationships;
+* review unclear concepts;
+* resolve Python, Jupyter or Git problems.
 
 If you need additional Python practice:
 
 [Introduction to Statistical Learning – Introduction to Python Lab](https://intro-stat-learning.github.io/ISLP/labs/Ch02-statlearn-lab.html)
+
+---
+
+# Important Data-Safety Rule
+
+The course dataset is synthetic unless explicitly stated otherwise.
+
+Do not attempt to identify real students or connect synthetic/pseudonymous records to real people.
+
+Fields such as names, email addresses, login IDs, student numbers, IP addresses, passwords, session information, teacher comments, raw security information and sensitive algorithmic risk classifications are not part of ordinary student datasets.
 
 ---
 
@@ -318,11 +336,14 @@ If you need additional Python practice:
 Before Monday, you should have:
 
 * studied the assigned theory;
-* worked with several data files;
-* loaded and combined JSON data;
-* inspected data types and data quality;
+* inspected source-like data records;
+* loaded and explored JSONL data;
+* used a data dictionary;
+* identified semantic data types;
+* combined related datasets;
+* investigated missingness and data quality;
 * prepared analysis-ready data;
-* practised basic storage and retrieval using SQLite;
+* stored and retrieved selected data using SQLite;
 * prepared your simplified concept map;
 * completed the preparation quiz/task;
 * a functioning course environment.
