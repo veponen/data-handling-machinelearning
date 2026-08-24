@@ -1,4 +1,3 @@
-I would use the following as the first custom student-facing theory material. I kept it deliberately compact and focused on decisions students will soon need to make with real datasets.
 
 # Understanding Data: Types, Meaning and Valid Operations
 
