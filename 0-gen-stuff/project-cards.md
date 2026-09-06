@@ -1,6 +1,8 @@
 # Primary Project Cards
 
-Projects are devided initially like this: group 1 gets project 1, group 2 gets project 2... and so on. 
+Projects are divided initially like this: Group 1 gets Project 1, Group 2 gets Project 2, and so on.
+
+**Dataset note:** The course provides the main artificial Edge-LMS dataset. In each card, “Artificial data” describes the patterns the supplied data should contain. Students may optionally generate a documented variant with the provided script, but they do not need to create the complete dataset themselves.
 
 ## Project 1 — Students at Risk of Not Completing the Course
 

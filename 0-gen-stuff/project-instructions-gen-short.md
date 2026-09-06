@@ -32,21 +32,11 @@ The purpose is to understand how user actions become raw data.
 
 Your own activity data will not be large enough for machine learning.
 
-## 2. Generate artificial data
+## 2. Use the provided artificial data
 
-Create a larger artificial dataset that follows the provided Edge-LMS data structure.
+The course provides a realistic artificial Edge-LMS dataset. You do not need to generate the complete dataset yourself.
 
-The data should contain meaningful relationships, not only random values.
-
-Document the main assumptions used to generate it. For example:
-
-* stronger previous performance may increase later success,
-* difficult questions may require more attempts,
-* some students may become inactive,
-* some values may be missing,
-* unusual events may occur rarely.
-
-You should know the important patterns built into your artificial data.
+Read its manifest, data dictionary and generation summary. Select the source files and variables needed for your project. If a simple student generator is available, you may optionally create a reproducible variant by choosing documented parameters and a random seed.
 
 ## 3. Prepare the analytical dataset
 
@@ -117,13 +107,13 @@ Remember:
 
 ## 8. Compare with the known artificial-data process
 
-Because you generated the artificial data, you know some of its true relationships.
+Use the public generation summary and any variant parameters you selected.
 
 Compare these with your results:
 
-* Did the analysis discover the patterns you created?
+* Did the analysis discover the documented patterns?
 * Did it miss important patterns?
-* Did it appear to discover relationships that were not intentionally created?
+* Did it appear to discover relationships that were not documented?
 
 ## 9. Consider limitations and responsible use
 
@@ -143,9 +133,9 @@ Do not use identifiable classmates' behaviour as your project dataset.
 
 Organize your project so that another person can understand:
 
-**raw data → artificial data → preprocessing → analytical dataset → model → evaluation**
+**provided synthetic source data → preprocessing → analytical dataset → model → evaluation**
 
-Where practical, data generation and processing should be repeatable by running your code again.
+Your processing must be repeatable. If you generate an optional variant, record its parameters and seed.
 
 ## Collaboration between groups
 
@@ -163,6 +153,6 @@ Each group must still produce its own project solution, code, analysis and resul
 
 A good project demonstrates that your group can move through the complete process:
 
-**information system → raw data → artificial data → analytical dataset → machine learning → evaluation → interpretation**
+**information system → synthetic source data → analytical dataset → machine learning → evaluation → interpretation**
 
 The quality of the project is not determined only by the final model score.

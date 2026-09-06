@@ -100,48 +100,19 @@ The small amount of data produced by your group is **not expected to be sufficie
 
 ---
 
-## 6. Stage 2 – Create artificial data
+## 6. Stage 2 – Use the provided artificial data
 
-Your group must create a larger artificial dataset suitable for your project.
+The course provides a realistic artificial Edge-LMS dataset. Your group does not need to generate the complete dataset.
 
-The artificial data should follow the provided Edge-LMS data structure sufficiently closely that the same data-handling methods could also be applied to equivalent real data.
-
-Do not generate data as completely independent random numbers.
-
-Your artificial dataset should contain documented assumptions and relationships.
-
-For example:
-
-* students with stronger earlier performance might have a higher probability of succeeding in later quizzes,
-* difficult questions might produce more unsuccessful attempts,
-* some students might study regularly while others work in short intensive periods,
-* some students might stop progressing through the course,
-* some data might deliberately be missing,
-* unusual LMS events might occur rarely.
-
-The assumptions should be appropriate for your specific project problem.
+Inspect its manifest, data dictionary and generation summary, then select the sources relevant to your Project Card. If a simple student generator is available, you may optionally create a variant using documented parameters and a fixed random seed.
 
 ---
 
-## 7. Document your artificial data assumptions
+## 7. Understand the artificial-data assumptions
 
-Your group must describe how the artificial data was generated.
+Summarize the documented relationships, noise, missingness, anomalies and limitations that matter to your project. If you generate an optional variant, record its parameters and seed.
 
-Document at least:
-
-* the number and types of records generated,
-* the important variables,
-* the important relationships between variables,
-* probability or rule-based assumptions used,
-* deliberately introduced noise,
-* missing data or anomalies,
-* and any important simplifications.
-
-This is important because artificial data gives you something that is rarely available with real-world data:
-
-**you know how the data was generated.**
-
-Later you can investigate whether your analysis and machine learning methods are able to discover the patterns you deliberately created.
+Later, compare your analysis with the public generation summary. Instructor-only ground truth is not part of the student dataset.
 
 ---
 
@@ -317,15 +288,15 @@ A variable being useful for prediction does **not** necessarily mean that it cau
 
 ---
 
-## 16. Compare your findings with your artificial-data assumptions
+## 16. Compare your findings with the artificial-data assumptions
 
-Because you created part of the dataset yourself, compare your results against the known data-generation process.
+Compare your results with the public generation summary and any optional variant parameters you selected.
 
 Ask:
 
-* Did the analysis find relationships that were intentionally created?
+* Did the analysis find the documented relationships?
 * Did the model miss any important relationships?
-* Did it appear to find relationships that were not deliberately created?
+* Did it appear to find relationships that were not documented?
 * How did random variation affect the results?
 * Could misleading conclusions be drawn from the dataset?
 
@@ -348,7 +319,7 @@ Depending on the project, discuss issues such as:
 * automated decision-making,
 * and how predictions should be communicated to teachers or students.
 
-The project dataset should primarily use the artificial data created for the exercise.
+The project should use the artificial data provided for the exercise or an approved generated variant.
 
 Do not build your project around the personal behaviour of identifiable classmates.
 
@@ -363,13 +334,13 @@ Keep your project organized.
 Your work should make clear:
 
 * where the raw data comes from,
-* how artificial data is generated,
+* which provided dataset or optional generated variant is used,
 * how data preparation is performed,
 * how the analytical dataset is created,
 * how models are trained,
 * and how results are evaluated.
 
-Where practical, data generation and preprocessing should be reproducible by running your code again.
+Data preparation must be reproducible. If you generate an optional variant, its parameters and seed must also be recorded.
 
 Use a fixed random seed where this is useful.
 
@@ -398,7 +369,7 @@ Sharing complete project solutions, project-specific code, results, or reports b
 
 A successful project should demonstrate that your group can move through the complete chain:
 
-**information system → raw data → artificial data → prepared analytical data → machine learning → evaluation → interpretation**
+**information system → synthetic source data → prepared analytical data → machine learning → evaluation → interpretation**
 
 The quality of the project is not determined only by the performance of the final model.
 
