@@ -1,0 +1,251 @@
+message_id,student_key,course_week,channel,message_text,message_category
+MSG0001,SYN023,2,course_chat,The result looks strange to me and I do not know what to change.,submission_deadline
+MSG0002,SYN027,3,help_request,"I have a question about the notebook; I want to understand the feedback before I try again. I checked the instructions first. Also, I do not understand what this metric actually tells us.?",assessment_feedback
+MSG0003,SYN038,7,help_request,I have a question about Edge-LMS; I want to confirm when the final version has to be returned. I tried once more before asking.,submission_deadline
+MSG0004,SYN014,6,help_request,I have a question about the project and what I should do next. we are trying to combine everyone's work into one result,project_group
+MSG0005,SYN003,4,help_request,I have a question about Edge-LMS; one member cannot attend and we need to reorganize the task. I checked the instructions first.,project_group
+MSG0006,SYN008,6,course_chat,Could you check the upload; I would like another example before continuing. I am trying to finish this before Monday.?,course_content
+MSG0007,SYN008,4,help_request,Something came up with the weekly task; the formula makes sense but the interpretation does not. I checked the instructions first.,course_content
+MSG0008,SYN015,3,help_request,SOMETHING CAME UP WITH THE GROUP TASK; I AM CHECKING WHETHER MONDAY MORNING IS ALREADY TOO LATE. I CHECKED THE INSTRUCTIONS FIRST.,submission_deadline
+MSG0009,SYN015,5,course_chat,Something came up with the weekly task; the idea behind the example is still unclear to me. I am trying to finish this before Monday.,course_content
+MSG0010,SYN029,7,course_chat,Something came up with the group task; we have different ideas about what the project question should be. I checked the instructions first.,project_group
+MSG0011,SYN022,3,help_request,I wanted to ask about the group task; I want to understand when this method is appropriate. Could you clarify it??,course_content
+MSG0012,SYN014,5,help_request,I need help with the course material; I need to know which return place should contain the final version. I am trying to finish this before Monday.,submission_deadline
+MSG0013,SYN016,7,help_request,I am not sure about the weekly task; I cannot tell whether the file actually reached the system. This is for this week's work.,technical_problem
+MSG0014,SYN032,5,course_chat,I have a question about the group task; I am not sure whether I can send it after the stated time. I checked the instructions first.,submission_deadline
+MSG0015,SYN008,2,course_chat,Can you check the notebook? I am not sure what happened.,project_group
+MSG0016,SYN029,3,help_request,I have a question about the project and what I should do next. I want to understand when this method is appropriate,course_content
+MSG0017,SYN029,3,help_request,I am not sure about the upload; I can follow the code but I do not understand why this method is used. I am trying to finish this before Monday.,course_content
+MSG0018,SYN015,3,course_chat,I am stuck with this week's task and need some clarification.,assessment_feedback
+MSG0019,SYN034,5,help_request,Can you help me with the regression exercise; one member cannot attend and we need to reorganize the task. I am trying to finish this before Monday.,project_group
+MSG0020,SYN025,2,course_chat,I am stuck with this week's task and need some clarification. I am checking whether Monday morning is already too late,submission_deadline
+MSG0021,SYN027,3,course_chat,"I have a question about the notebook; I want to understand when this method is appropriate. I may have misunderstood something. Also, the page stops loading when I try to continue.",course_content
+MSG0022,SYN037,7,help_request,Can you help me with the upload; I would like another example before continuing. Could you clarify it?,course_content
+MSG0023,SYN001,4,help_request,I am stuck with this week's task and need some clarification. it worked earlier but now I cannot access it,technical_problem
+MSG0024,SYN031,3,discussion,I am working on the quiz; the browser shows the page but the action will not complete. Could you clarify it?,technical_problem
+MSG0025,SYN003,5,help_request,Can you help me with the group task; I cannot see which part of my answer caused the lost points. I tried once more before asking.,assessment_feedback
+MSG0026,SYN025,2,help_request,Can you help me with the group task; I'm checking whether Monday morning is already too late. I may have misunderstood something.,submission_deadline
+MSG0027,SYN016,6,help_request,"I am working on Edge-LMS; I would like another example before continuing. I am trying to finish this before Monday. Also, two people in our team are working on the same thing.",course_content
+MSG0028,SYN033,4,help_request,I wanted to ask about the upload; the score was different from what I expected. Could you clarify it?,assessment_feedback
+MSG0029,SYN001,2,course_chat,I wanted to ask about the course material; I may finish later and want to know whether it will still be accepted.,submission_deadline
+MSG0030,SYN007,4,course_chat,I wanted to ask about the course material; the upload appears to fail before it finishes. This is for this week's work.,technical_problem
+MSG0031,SYN023,5,discussion,I am not sure about the project; one member cannot attend and we need to reorganize the task. Could you clarify it?,project_group
+MSG0032,SYN024,3,course_chat,Can you help me with the course material; I cannot tell which date in the instructions is the actual due date. Could you clarify it?,submission_deadline
+MSG0033,SYN007,5,course_chat,I am working on the group task; two people in our team are working on the same thing. I may have misunderstood something.,project_group
+MSG0034,SYN039,2,help_request,I need help with Edge-LMS; I cannot tell which date in the instructions is the actual due date.?,submission_deadline
+MSG0035,SYN034,2,course_chat,"I wanted to ask about the group task; I thought the work was complete but the result suggests otherwise. I may have misunderstood something. Also, I am confused about how this concept differs from the previous one.",assessment_feedback
+MSG0036,SYN012,2,help_request,Can you help me with the regression exercise; I am not sure how this result was calculated. I am trying to finish this before Monday.?,assessment_feedback
+MSG0037,SYN033,3,course_chat,Can you check the notebook? I am not sure what happened.,course_content
+MSG0038,SYN014,3,help_request,I wanted to ask about the quiz; I cannot see which part of my answer caused the lost points. This is for this week's work.?,assessment_feedback
+MSG0039,SYN031,7,discussion,"I am not sure about the result; two people in our team are working on the same thing. I checked the instructions first. Also, I am not sure how this result was calculated.",project_group
+MSG0040,SYN020,2,help_request,Can you help me with the result; I cannot see which part of my answer caused the lost points. Could you clarify it?,assessment_feedback
+MSG0041,SYN014,7,help_request,I AM WORKING ON THE GROUP TASK; I CAN FOLLOW THE CODE BUT I DO NOT UNDERSTAND WHY THIS METHOD IS USED. THIS IS FOR THIS WEEK'S WORK.,course_content
+MSG0042,SYN023,2,discussion,Can you check the notebook? I am not sure what happened.,technical_problem
+MSG0043,SYN020,4,course_chat,SOMETHING CAME UP WITH THE NOTEBOOK; I AM CONFUSED ABOUT HOW THIS CONCEPT DIFFERS FROM THE PREVIOUS ONE. COULD YOU CLARIFY IT?,course_content
+MSG0044,SYN021,6,course_chat,I AM WORKING ON THE NOTEBOOK; I GET AN UNEXPECTED MESSAGE ON THE SCREEN. I AM TRYING TO FINISH THIS BEFORE MONDAY.,technical_problem
+MSG0045,SYN014,4,help_request,I wanted to ask about the group task; I can follow the code but I do not understand why this method is used.,course_content
+MSG0046,SYN031,4,course_chat,I have a question about the project and what I should do next.,submission_deadline
+MSG0047,SYN015,5,help_request,"I need help with the quiz; I get an unexpected message on the screen. This is for this week's work. Also, I would like to know what should be improved in my answer.",technical_problem
+MSG0048,SYN024,2,course_chat,"I am working on the upload; the browser shows the page but the action will not complete. This is for this week's work. Also, I want to understand when this method is appropriate.",technical_problem
+MSG0049,SYN006,3,course_chat,I wanted to ask about the notebook; we are trying to combine everyone's work into one result.,project_group
+MSG0050,SYN030,6,help_request,Something came up with the quiz; the formula makes sense but the interpretation does not. I'm trying to finish this before Monday.,course_content
+MSG0051,SYN029,2,discussion,I am not sure about the group task; I thought the work was complete but the result suggests otherwise. Could you clarify it?,assessment_feedback
+MSG0052,SYN012,6,course_chat,"I need help with Edge-LMS; I cannot tell whether the file actually reached the system. I checked the instructions first. Also, I am checking whether Monday morning is already too late.",technical_problem
+MSG0053,SYN008,3,help_request,I wanted to ask about the concept map; the result changed after my second attempt and I want to know why. This is for this week's work.,assessment_feedback
+MSG0054,SYN034,3,course_chat,I am working on the course material; the upload appears to fail before it finishes. I may have misunderstood something.?,technical_problem
+MSG0055,SYN003,2,help_request,I am working on the regression exercise; the button does nothing when I press it. Could you clarify it?,technical_problem
+MSG0056,SYN017,4,help_request,Could you check Edge-LMS; we are not sure what should be returned as group work. I checked the instructions first.,project_group
+MSG0057,SYN028,5,help_request,I am stuck with this week's task and need some clarification.,project_group
+MSG0058,SYN014,7,course_chat,I need help with the weekly task; we are not sure what should be returned as group work. I may have misunderstood something.,project_group
+MSG0059,SYN037,2,discussion,I have a question about the project and what I should do next.,project_group
+MSG0060,SYN026,4,course_chat,I need help with the weekly task; I am confused about how this concept differs from the previous one. I am trying to finish this before Monday.,course_content
+MSG0061,SYN037,3,course_chat,Something came up with the upload; I am confused about how this concept differs from the previous one. I checked the instructions first.,course_content
+MSG0062,SYN038,3,course_chat,Can you check the notebook? I am not sure what happened. we are not sure what should be returned as group work,project_group
+MSG0063,SYN028,2,course_chat,Could you check the quiz; I want to make sure I submit the correct version before the deadline. I may have misunderstood something.,submission_deadline
+MSG0064,SYN017,3,course_chat,I have a question about the project and what I should do next. I cannot see which part of my answer caused the lost points,assessment_feedback
+MSG0065,SYN018,7,course_chat,I am working on Edge-LMS; I want to know if another attempt can be submitted after the first one. I may have misunderstood something.,submission_deadline
+MSG0066,SYN003,7,discussion,Can you help me with the project; I am confused about how this concept differs from the previous one. I may have misunderstood something.,course_content
+MSG0067,SYN007,7,help_request,"Something came up with the notebook; I do not understand what this metric actually tells us. I may have misunderstood something. Also, I cannot tell which date in the instructions is the actual due date.",course_content
+MSG0068,SYN003,2,discussion,"I wanted to ask about the course material; I want to check whether the feedback refers to my latest attempt. I tried once more before asking. Also, I want to confirm when the final version has to be returned.",assessment_feedback
+MSG0069,SYN011,4,help_request,Something came up with the regression exercise; I'm not sure how this result was calculated. I checked the instructions first.,assessment_feedback
+MSG0070,SYN001,5,help_request,I need help with the regression exercise; I get an unexpected message on the screen. Could you clarify it?,technical_problem
+MSG0071,SYN025,6,course_chat,I wanted to ask about the result; I want to understand when this method is appropriate. I may have misunderstood something.,course_content
+MSG0072,SYN025,2,help_request,I am stuck with this week's task and need some clarification. I am checking whether Monday morning is already too late,submission_deadline
+MSG0073,SYN017,2,discussion,"Can you help me with the quiz; the browser shows the page but the action will not complete. I am trying to finish this before Monday. Also, the score was different from what I expected.",technical_problem
+MSG0074,SYN038,3,course_chat,I am not sure about the regression exercise; I would like to know what should be improved in my answer. I may have misunderstood something.,assessment_feedback
+MSG0075,SYN022,4,help_request,Something came up with the regression exercise; we are not sure what should be returned as group work. This is for this week's work.,project_group
+MSG0076,SYN017,3,help_request,I have a question about Edge-LMS; I am checking whether Monday morning is already too late. I may have misunderstood something.,submission_deadline
+MSG0077,SYN018,6,help_request,"Something came up with the notebook; the system sends me back to the same page. I checked the instructions first. Also, one member cannot attend and we need to reorganize the task.?",technical_problem
+MSG0078,SYN004,4,help_request,THE RESULT LOOKS STRANGE TO ME AND I DO NOT KNOW WHAT TO CHANGE.,course_content
+MSG0079,SYN004,2,help_request,I need help with the result; I want to understand the feedback before I try again. I tried once more before asking.,assessment_feedback
+MSG0080,SYN030,4,course_chat,I am stuck with this week's task and need some clarification. the page stops loading when I try to continue,technical_problem
+MSG0081,SYN010,5,course_chat,Can you help me with the project; I want to know if another attempt can be submitted after the first one. I am trying to finish this before Monday.?,submission_deadline
+MSG0082,SYN012,5,course_chat,I am working on the quiz; our group has not agreed who should handle this part. I am trying to finish this before Monday.,project_group
+MSG0083,SYN021,2,discussion,I have a question about the project and what I should do next.,submission_deadline
+MSG0084,SYN026,3,course_chat,I am stuck with this week's task and need some clarification.,submission_deadline
+MSG0085,SYN035,4,discussion,I am stuck with this week's task and need some clarification. I am unsure why we split the data this way,course_content
+MSG0086,SYN039,6,help_request,"Something came up with the weekly task; I want to confirm when the final version has to be returned. I am trying to finish this before Monday. Also, the score was different from what I expected.?",submission_deadline
+MSG0087,SYN018,3,help_request,"I need help with the group task; I get an unexpected message on the screen. I am trying to finish this before Monday. Also, the score was different from what I expected.",technical_problem
+MSG0088,SYN007,3,help_request,"I am working on Edge-LMS; I would like another example before continuing. I am trying to finish this before Monday. Also, two people in our team are working on the same thing.",course_content
+MSG0089,SYN036,3,help_request,I'm not sure about the concept map; we are trying to combine everyone's work into one result. This is for this week's work.,project_group
+MSG0090,SYN030,4,help_request,Something came up with Edge-LMS; our group needs to decide which data should be used. This is for this week's work.,project_group
+MSG0091,SYN034,4,course_chat,I am working on the concept map; I am checking whether Monday morning is already too late. I may have misunderstood something.,submission_deadline
+MSG0092,SYN032,3,help_request,I need help with the quiz because something is not right. the score was different from what I expected,assessment_feedback
+MSG0093,SYN012,4,help_request,I wanted to ask about the quiz; we need to divide the work before the next meeting. I tried once more before asking.,project_group
+MSG0094,SYN016,7,discussion,"COULD YOU CHECK EDGE-LMS; I AM UNSURE WHY WE SPLIT THE DATA THIS WAY. THIS IS FOR THIS WEEK'S WORK. ALSO, I THOUGHT THE WORK WAS COMPLETE BUT THE RESULT SUGGESTS OTHERWISE.",course_content
+MSG0095,SYN009,5,discussion,"I AM WORKING ON THE REGRESSION EXERCISE; THE RESULT CHANGED AFTER MY SECOND ATTEMPT AND I WANT TO KNOW WHY. I CHECKED THE INSTRUCTIONS FIRST. ALSO, I WANT TO MAKE SURE I SUBMIT THE CORRECT VERSION BEFORE THE DEADLINE.",assessment_feedback
+MSG0096,SYN028,4,discussion,I have a question about the project and what I should do next.,project_group
+MSG0097,SYN005,4,help_request,I am working on the weekly task; I would like to know what should be improved in my answer.,assessment_feedback
+MSG0098,SYN035,2,course_chat,I need help with the concept map; our group has not agreed who should handle this part. I may have misunderstood something.,project_group
+MSG0099,SYN014,5,discussion,"I am not sure about the regression exercise; I want to make sure I submit the correct version before the deadline. This is for this week's work. Also, the result changed after my second attempt and I want to know why.",submission_deadline
+MSG0100,SYN033,6,help_request,The result looks strange to me and I do not know what to change. I want to check whether the feedback refers to my latest attempt,assessment_feedback
+MSG0101,SYN029,4,help_request,I am working on the weekly task; I cannot tell whether the file actually reached the system. I am trying to finish this before Monday.,technical_problem
+MSG0102,SYN038,3,help_request,The result looks strange to me and I do not know what to change. one member cannot attend and we need to reorganize the task,project_group
+MSG0103,SYN008,4,course_chat,I have a question about the project and what I should do next.,submission_deadline
+MSG0104,SYN033,5,help_request,I have a question about the project and what I should do next.,course_content
+MSG0105,SYN018,2,discussion,I am stuck with this week's task and need some clarification.,technical_problem
+MSG0106,SYN004,4,course_chat,Can you check the notebook? I am not sure what happened. the idea behind the example is still unclear to me,course_content
+MSG0107,SYN018,5,help_request,I have a question about the upload; I want to make sure I submit the correct version before the deadline. pls clarify it?,submission_deadline
+MSG0108,SYN031,6,course_chat,I need help with the project; I want to understand the feedback before I try again. I am trying to finish this before Monday.,assessment_feedback
+MSG0109,SYN020,7,help_request,I need help with the quiz because something is not right. I am not sure how this result was calculated,assessment_feedback
+MSG0110,SYN014,5,help_request,I have a question about the concept map; two people in our team are working on the same thing. I checked the instructions first.?,project_group
+MSG0111,SYN011,3,course_chat,I am not sure about Edge-LMS; the formula makes sense but the interpretation does not. Could you clarify it?,course_content
+MSG0112,SYN014,7,discussion,I have a question about the project and what I should do next.,assessment_feedback
+MSG0113,SYN025,7,help_request,"I am not sure about the upload; I want to check whether the feedback refers to my latest attempt. Also, I am not sure whether I can send it after the stated time.",assessment_feedback
+MSG0114,SYN031,6,discussion,I wanted to ask about the project; I may finish later and want to know whether it will still be accepted.,submission_deadline
+MSG0115,SYN020,3,help_request,I need help with the quiz because something is not right. the score was different from what I expected,assessment_feedback
+MSG0116,SYN028,4,help_request,I'm not sure about the upload; we are not sure what should be returned as group work. I'm trying to finish this before Monday.?,project_group
+MSG0117,SYN016,7,help_request,I am working on the weekly task; the score was different from what I expected. I am trying to finish this before Monday.,assessment_feedback
+MSG0118,SYN027,2,discussion,Can you check the notebook? I am not sure what happened. I want to understand when this method is appropriate,course_content
+MSG0119,SYN030,5,help_request,I wanted to ask about the course material; I cannot tell whether the file actually reached the system. I am trying to finish this before Monday.,technical_problem
+MSG0120,SYN003,7,help_request,I need help with the quiz because something is not right. the idea behind the example is still unclear to me,course_content
+MSG0121,SYN040,2,discussion,I have a question about the project and what I should do next. the upload appears to fail before it finishes,technical_problem
+MSG0122,SYN037,5,help_request,"I AM WORKING ON THE REGRESSION EXERCISE; THE RESULT CHANGED AFTER MY SECOND ATTEMPT AND I WANT TO KNOW WHY. I CHECKED THE INSTRUCTIONS FIRST. ALSO, I WANT TO MAKE SURE I SUBMIT THE CORRECT VERSION BEFORE THE DEADLINE.",assessment_feedback
+MSG0123,SYN035,3,help_request,I wanted to ask about the upload; we need to divide the work before the next meeting. Could you clarify it?,project_group
+MSG0124,SYN036,4,discussion,I wanted to ask about the quiz; we need to divide the work before the next meeting. I tried once more before asking.,project_group
+MSG0125,SYN019,3,discussion,I am working on the quiz; one member cannot attend and we need to reorganize the task. Could you clarify it?,project_group
+MSG0126,SYN001,7,help_request,Can you check the notebook? I am not sure what happened.,assessment_feedback
+MSG0127,SYN026,3,course_chat,"Something came up with the upload; I want to confirm when the final version has to be returned. Also, two people in our team are working on the same thing.",submission_deadline
+MSG0128,SYN028,6,help_request,"Could you check the weekly task; the result changed after my second attempt and I want to know why. I may have misunderstood something. Also, the browser shows the page but the action will not complete.",assessment_feedback
+MSG0129,SYN004,5,help_request,Could you check the concept map; the browser shows the page but the action will not complete. I checked the instructions first.,technical_problem
+MSG0130,SYN031,7,discussion,I am working on the group task; I cannot tell which date in the instructions is the actual due date. This is for this week's work.,submission_deadline
+MSG0131,SYN008,6,help_request,Can you check the notebook? I am not sure what happened.,assessment_feedback
+MSG0132,SYN001,7,discussion,I have a question about the weekly task; I'm confused about how this concept differs from the previous one. This is for this week's work.,course_content
+MSG0133,SYN021,7,course_chat,Something came up with the result; I get an unexpected message on the screen. This is for this week's work.,technical_problem
+MSG0134,SYN032,6,course_chat,I wanted to ask about the regression exercise; I cannot tell which date in the instructions is the actual due date. Could you clarify it?,submission_deadline
+MSG0135,SYN020,4,help_request,Could you check the upload; the idea behind the example is still unclear to me. I tried once more before asking.,course_content
+MSG0136,SYN032,3,help_request,I have a question about the result; the score was different from what I expected.,assessment_feedback
+MSG0137,SYN029,4,discussion,"I have a question about the result; I can follow the code but I do not understand why this method is used. I may have misunderstood something. Also, I am checking whether Monday morning is already too late.",course_content
+MSG0138,SYN029,7,discussion,"Something came up with Edge-LMS; the page stops loading when I try to continue. I tried once more before asking. Also, we are trying to combine everyone's work into one result.?",technical_problem
+MSG0139,SYN001,3,help_request,I need help with the concept map; I cannot tell whether the file actually reached the system. Could you clarify it?,technical_problem
+MSG0140,SYN026,4,help_request,Can you help me with Edge-LMS; one member cannot attend and we need to reorganize the task. I checked the instructions first.,project_group
+MSG0141,SYN002,7,course_chat,I wanted to ask about the group task; the button does nothing when I press it. I checked the instructions first.,technical_problem
+MSG0142,SYN003,6,help_request,I am stuck with this week's task and need some clarification.,submission_deadline
+MSG0143,SYN013,4,discussion,The result looks strange to me and I do not know what to change. I want to check whether the feedback refers to my latest attempt,assessment_feedback
+MSG0144,SYN001,3,discussion,I have a question about the course material; I may finish later and want to know whether it will still be accepted.,submission_deadline
+MSG0145,SYN039,2,help_request,I am stuck with this week's task and need some clarification. we have different ideas about what the project question should be,project_group
+MSG0146,SYN027,3,course_chat,Can you help me with the regression exercise; I may finish later and want to know whether it will still be accepted. This is for this week's work.,submission_deadline
+MSG0147,SYN036,3,discussion,I am not sure about the quiz; the score was different from what I expected. I tried once more before asking.,assessment_feedback
+MSG0148,SYN027,7,course_chat,I am stuck with this week's task and need some clarification. the idea behind the example is still unclear to me,course_content
+MSG0149,SYN023,5,course_chat,I AM WORKING ON THE NOTEBOOK; I GET AN UNEXPECTED MESSAGE ON THE SCREEN. I AM TRYING TO FINISH THIS BEFORE MONDAY.,technical_problem
+MSG0150,SYN034,6,discussion,"I am not sure about the regression exercise; I thought the work was complete but the result suggests otherwise. I am trying to finish this before Monday. Also, it worked earlier but now I can't access it.",assessment_feedback
+MSG0151,SYN025,6,discussion,I have a question about the project and what I should do next. the upload appears to fail before it finishes,technical_problem
+MSG0152,SYN008,3,discussion,I need help with the regression exercise; the result changed after my second attempt and I want to know why. Could you clarify it?,assessment_feedback
+MSG0153,SYN027,2,help_request,I am not sure about the project; I need to know which return place should contain the final version. I am trying to finish this before Monday.,submission_deadline
+MSG0154,SYN020,4,help_request,"I need help with the result; the page stops loading when I try to continue. Could you clarify it? Also, we need to divide the work before the next meeting.?",technical_problem
+MSG0155,SYN029,7,help_request,"I need help with the result; I don't understand what this metric actually tells us. I may have misunderstood something. Also, one member cannot attend and we need to reorganize the task.",course_content
+MSG0156,SYN013,3,help_request,I have a question about the project and what I should do next.,submission_deadline
+MSG0157,SYN003,2,help_request,Something came up with the result; I get an unexpected message on the screen. I may have misunderstood something.,technical_problem
+MSG0158,SYN001,7,course_chat,Can you check the notebook? I am not sure what happened.,technical_problem
+MSG0159,SYN025,7,course_chat,I wanted to ask about the upload; the result changed after my second attempt and I want to know why. Could you clarify it??,assessment_feedback
+MSG0160,SYN008,4,discussion,I am stuck with this week's task and need some clarification.,submission_deadline
+MSG0161,SYN021,6,course_chat,"I wanted to ask about the concept map; I get an unexpected message on the screen. I may have misunderstood something. Also, I would like to know what should be improved in my answer.",technical_problem
+MSG0162,SYN003,3,discussion,"COULD YOU CHECK EDGE-LMS; I AM UNSURE WHY WE SPLIT THE DATA THIS WAY. THIS IS FOR THIS WEEK'S WORK. ALSO, I THOUGHT THE WORK WAS COMPLETE BUT THE RESULT SUGGESTS OTHERWISE.",course_content
+MSG0163,SYN008,4,course_chat,Could you check the project; I want to check whether the feedback refers to my latest attempt. I may have misunderstood something.,assessment_feedback
+MSG0164,SYN020,6,help_request,Something came up with the course material; the formula makes sense but the interpretation does not. I tried once more before asking.,course_content
+MSG0165,SYN024,5,help_request,The result looks strange to me and I do not know what to change. I need to know which return place should contain the final version,submission_deadline
+MSG0166,SYN031,7,course_chat,I am working on the quiz; I am checking whether Monday morning is already too late. I tried once more before asking.?,submission_deadline
+MSG0167,SYN025,5,course_chat,Could you check the regression exercise; I may finish later and want to know whether it will still be accepted. I may have misunderstood something.,submission_deadline
+MSG0168,SYN025,5,help_request,I have a question about the quiz; I am confused about how this concept differs from the previous one. This is for this week's work.,course_content
+MSG0169,SYN005,3,help_request,I need help with the concept map; I would like to know what should be improved in my answer. Could you clarify it?,assessment_feedback
+MSG0170,SYN019,4,course_chat,I am working on the upload; we need to divide the work before the next meeting. I checked the instructions first.,project_group
+MSG0171,SYN028,7,course_chat,Can you help me with the group task; the result changed after my second attempt and I want to know why. I may have misunderstood something.,assessment_feedback
+MSG0172,SYN016,3,help_request,Can you check the notebook? I am not sure what happened.,technical_problem
+MSG0173,SYN014,5,discussion,The result looks strange to me and I do not know what to change. the browser shows the page but the action will not complete,technical_problem
+MSG0174,SYN028,5,course_chat,Something came up with the regression exercise; we have different ideas about what the project question should be.,project_group
+MSG0175,SYN040,4,help_request,I wanted to ask about Edge-LMS; the page stops loading when I try to continue. This is for this week's work.,technical_problem
+MSG0176,SYN030,5,discussion,I have a question about the group task; the idea behind the example is still unclear to me. I am trying to finish this before Monday.,course_content
+MSG0177,SYN023,4,discussion,I am not sure about the regression exercise; I am unsure why we split the data this way. I checked the instructions first.,course_content
+MSG0178,SYN019,7,discussion,I need help with the result; our group has not agreed who should handle this part. This is for this week's work.,project_group
+MSG0179,SYN015,7,discussion,I am working on the group task; I cannot tell which date in the instructions is the actual due date. This is for this week's work.,submission_deadline
+MSG0180,SYN007,3,help_request,I am working on the group task; two people in our team are working on the same thing. I may have misunderstood something.,project_group
+MSG0181,SYN026,7,discussion,I need help with the quiz because something is not right. the page stops loading when I try to continue,technical_problem
+MSG0182,SYN017,2,course_chat,I need help with Edge-LMS; our group has not agreed who should handle this part. Could you clarify it?,project_group
+MSG0183,SYN019,2,help_request,I wanted to ask about the quiz; I cannot see which part of my answer caused the lost points. This is for this week's work.?,assessment_feedback
+MSG0184,SYN039,4,course_chat,I have a question about the project and what I should do next. one member cannot attend and we need to reorganize the task,project_group
+MSG0185,SYN030,6,course_chat,I am working on the concept map; I want to check whether the feedback refers to my latest attempt. I checked the instructions first.,assessment_feedback
+MSG0186,SYN033,5,course_chat,I'm not sure about the course material; the browser shows the page but the action will not complete. I may have misunderstood something.,technical_problem
+MSG0187,SYN002,5,course_chat,I am stuck with this week's task and need some clarification.,project_group
+MSG0188,SYN010,3,course_chat,Could you check the weekly task; I thought the work was complete but the result suggests otherwise. This is for this week's work.,assessment_feedback
+MSG0189,SYN032,6,discussion,I need help with the regression exercise; I am not sure whether I can send it after the stated time. This is for this week's work.,submission_deadline
+MSG0190,SYN017,5,course_chat,"I'm not sure about the upload; it worked earlier but now I cannot access it. Could you clarify it? Also, we need to divide the work before the next meeting.",technical_problem
+MSG0191,SYN013,3,course_chat,I wanted to ask about the regression exercise; two people in our team are working on the same thing. I tried once more before asking.,project_group
+MSG0192,SYN029,7,course_chat,"Something came up with the notebook; the button does nothing when I press it. I may have misunderstood something. Also, I want to check whether the feedback refers to my latest attempt.",technical_problem
+MSG0193,SYN002,5,course_chat,I have a question about the project and what I should do next. one member cannot attend and we need to reorganize the task,project_group
+MSG0194,SYN040,3,discussion,Can you check the notebook? I am not sure what happened. we are trying to combine everyone's work into one result,project_group
+MSG0195,SYN018,5,course_chat,"Something came up with the concept map; the idea behind the example is still unclear to me. This is for this week's work. Also, we are trying to combine everyone's work into one result.",course_content
+MSG0196,SYN003,2,help_request,"I wanted to ask about the regression exercise; the score was different from what I expected. I checked the instructions first. Also, our group has not agreed who should handle this part.",assessment_feedback
+MSG0197,SYN033,2,help_request,I need help with the course material; I want to confirm when the final version has to be returned. I checked the instructions first.?,submission_deadline
+MSG0198,SYN012,3,course_chat,"Could you check the project; I am unsure why we split the data this way. Could you clarify it? Also, we need to divide the work before the next meeting.",course_content
+MSG0199,SYN013,4,help_request,Could you check the regression exercise; the result changed after my second attempt and I want to know why. I may have misunderstood something.,assessment_feedback
+MSG0200,SYN022,4,help_request,The result looks strange to me and I don't know what to change.,project_group
+MSG0201,SYN011,3,help_request,"I am not sure about the result; I do not understand what this metric actually tells us. This is for this week's work. Also, I cannot see which part of my answer caused the lost points.",course_content
+MSG0202,SYN039,3,discussion,I have a question about the weekly task; I'm confused about how this concept differs from the previous one. This is for this week's work.,course_content
+MSG0203,SYN024,5,course_chat,SOMETHING CAME UP WITH THE PROJECT; I AM NOT SURE WHETHER I CAN SEND IT AFTER THE STATED TIME. PLS CLARIFY IT?,submission_deadline
+MSG0204,SYN025,7,discussion,Something came up with the quiz; the score was different from what I expected. I tried once more before asking.,assessment_feedback
+MSG0205,SYN032,2,discussion,I'm working on the upload; two people in our team are working on the same thing. I checked the instructions first.,project_group
+MSG0206,SYN024,4,course_chat,Something came up with the project; I may finish later and want to know whether it will still be accepted. I am trying to finish this before Monday.,submission_deadline
+MSG0207,SYN009,7,course_chat,I am working on the regression exercise; I am confused about how this concept differs from the previous one. I may have misunderstood something.,course_content
+MSG0208,SYN033,5,discussion,I am not sure about the concept map; the result changed after my second attempt and I want to know why. I may have misunderstood something.,assessment_feedback
+MSG0209,SYN013,7,help_request,Can you check the notebook? I'm not sure what happened. I want to check whether the feedback refers to my latest attempt,assessment_feedback
+MSG0210,SYN020,6,help_request,Can you help me with the notebook; we have different ideas about what the project question should be. Could you clarify it?,project_group
+MSG0211,SYN035,4,help_request,I need help with the group task; it worked earlier but now I cannot access it. This is for this week's work.,technical_problem
+MSG0212,SYN008,3,help_request,"I am not sure about the upload; we need to divide the work before the next meeting. I may have misunderstood something. Also, I cannot tell which date in the instructions is the actual due date.",project_group
+MSG0213,SYN021,4,discussion,"Could you check the upload; I may finish later and want to know whether it will still be accepted. Also, the idea behind the example is still unclear to me.",submission_deadline
+MSG0214,SYN010,5,help_request,Something came up with the concept map; I get an unexpected message on the screen.,technical_problem
+MSG0215,SYN022,7,help_request,I am not sure about the group task; I cannot tell whether the file actually reached the system.,technical_problem
+MSG0216,SYN002,5,discussion,I have a question about the result; I need to know which return place should contain the final version.?,submission_deadline
+MSG0217,SYN008,5,course_chat,I have a question about the notebook; I get an unexpected message on the screen. I may have misunderstood something.,technical_problem
+MSG0218,SYN033,5,discussion,Could you check the quiz; we are not sure what should be returned as group work.,project_group
+MSG0219,SYN035,2,course_chat,I am working on the result; I cannot tell whether the file actually reached the system. I may have misunderstood something.,technical_problem
+MSG0220,SYN016,3,help_request,The result looks strange to me and I do not know what to change. I get an unexpected message on the screen,technical_problem
+MSG0221,SYN009,5,help_request,"I am not sure about the result; I do not understand what this metric actually tells us. This is for this week's work. Also, I cannot see which part of my answer caused the lost points.",course_content
+MSG0222,SYN024,5,course_chat,I have a question about the result; I need to know which return place should contain the final version.?,submission_deadline
+MSG0223,SYN037,7,discussion,I wanted to ask about Edge-LMS; the system sends me back to the same page. This is for this week's work.,technical_problem
+MSG0224,SYN010,6,help_request,Can you help me with the notebook; we have different ideas about what the project question should be. Could you clarify it?,project_group
+MSG0225,SYN012,7,course_chat,"I wanted to ask about the concept map; we are not sure what should be returned as group work. I tried once more before asking. Also, I do not understand what this metric actually tells us.?",project_group
+MSG0226,SYN016,2,course_chat,I wanted to ask about the upload; I cannot tell which date in the instructions is the actual due date. I tried once more before asking.,submission_deadline
+MSG0227,SYN004,4,course_chat,The result looks strange to me and I do not know what to change. we are trying to combine everyone's work into one result,project_group
+MSG0228,SYN004,5,discussion,The result looks strange to me and I do not know what to change.,course_content
+MSG0229,SYN038,4,course_chat,The result looks strange to me and I do not know what to change. the page stops loading when I try to continue,technical_problem
+MSG0230,SYN011,4,discussion,I am stuck with this week's task and need some clarification. the page stops loading when I try to continue,technical_problem
+MSG0231,SYN016,7,discussion,I have a question about the upload; I want to make sure I submit the correct version before the deadline. pls clarify it?,submission_deadline
+MSG0232,SYN016,6,course_chat,I need help with the quiz because something is not right. I want to understand when this method is appropriate,course_content
+MSG0233,SYN033,2,help_request,I have a question about the notebook; I am not sure whether I can send it after the stated time. I tried once more before asking.,submission_deadline
+MSG0234,SYN018,3,help_request,"I NEED HELP WITH THE PROJECT; I WOULD LIKE ANOTHER EXAMPLE BEFORE CONTINUING. I CHECKED THE INSTRUCTIONS FIRST. ALSO, I WANT TO UNDERSTAND THE FEEDBACK BEFORE I TRY AGAIN.?",course_content
+MSG0235,SYN028,7,course_chat,Can you help me with the weekly task; the formula makes sense but the interpretation does not. I may have misunderstood something.,course_content
+MSG0236,SYN003,4,course_chat,I have a question about the result; the score was different from what I expected. This is for this week's work.,assessment_feedback
+MSG0237,SYN024,5,discussion,I am working on Edge-LMS; the formula makes sense but the interpretation does not. I may have misunderstood something.,course_content
+MSG0238,SYN006,7,help_request,"I am not sure about the upload; I am checking whether Monday morning is already too late. I may have misunderstood something. Also, I am unsure why we split the data this way.",submission_deadline
+MSG0239,SYN002,2,help_request,I have a question about the result; I want to check whether the feedback refers to my latest attempt. I'm trying to finish this before Monday.,assessment_feedback
+MSG0240,SYN009,4,course_chat,I need help with Edge-LMS; it worked earlier but now I cannot access it. I checked the instructions first.,technical_problem
+MSG0241,SYN035,5,help_request,I am working on the course material; I am checking whether Monday morning is already too late.,submission_deadline
+MSG0242,SYN012,7,help_request,pls check the upload; the browser shows the page but the action will not complete. I may have misunderstood something.,technical_problem
+MSG0243,SYN014,5,course_chat,I'm not sure about the result; the formula makes sense but the interpretation does not. Could you clarify it?,course_content
+MSG0244,SYN012,6,help_request,I wanted to ask about the weekly task; I am not sure whether I can send it after the stated time. I may have misunderstood something.,submission_deadline
+MSG0245,SYN007,7,course_chat,I am working on Edge-LMS; I get an unexpected message on the screen. Could you clarify it?,technical_problem
+MSG0246,SYN004,6,discussion,"Can you help me with the regression exercise; one member cannot attend and we need to reorganize the task. Could you clarify it? Also, it worked earlier but now I cannot access it.?",project_group
+MSG0247,SYN025,7,help_request,I am stuck with this week's task and need some clarification.,project_group
+MSG0248,SYN003,2,discussion,Something came up with the quiz; I am not sure how this result was calculated. Could you clarify it?,assessment_feedback
+MSG0249,SYN033,3,course_chat,"Can you help me with the quiz; I thought the work was complete but the result suggests otherwise. I checked the instructions first. Also, I want to understand when this method is appropriate.",assessment_feedback
+MSG0250,SYN036,2,course_chat,I need help with the concept map; we have different ideas about what the project question should be. I checked the instructions first.,project_group
