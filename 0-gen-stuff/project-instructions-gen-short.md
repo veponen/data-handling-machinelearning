@@ -1,6 +1,6 @@
 # Data Handling and Machine Learning – Group Project Instructions
 
-(data)[https://github.com/veponen/data-handling-machinelearning/tree/main/4-week/data-tour]
+[data for the project](https://github.com/veponen/data-handling-machinelearning/tree/main/4-week/data-tour)
 
 ## Purpose
 
