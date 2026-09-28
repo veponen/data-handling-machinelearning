@@ -1,5 +1,7 @@
 # Data Handling and Machine Learning – Group Project Instructions
 
+(data)[https://github.com/veponen/data-handling-machinelearning/tree/main/4-week/data-tour]
+
 ## Purpose
 
 The project practices a complete **data handling and machine learning workflow** using learning analytics data from Edge-LMS.
